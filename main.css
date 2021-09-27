@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* CSS Document */
+.container{
+	display: flex;
+	width: 1020px;
+	margin: 0 auto;
+	background-color: lightblue;
+}
+
+header{
+	width: 100%;
+	text-align: center;
+}
+.flex-container{
+	height: 150px;
+	display: flex;
+	background-color: beige;
+	flex-direction: row;
+	align-items: stretch;
+}
+
+.flex-containter div{
+	background-color: aqua;
+	flex-grow: 4;
+	
+}
+
+.flex-container .nav{
+	flex-grow: 1;
+	flex-direction: column;
+	
+}
+
+footer{
+	width: 100%;
+	text-align: center;
+}
+
+/* Responsive layout - makes a one column layout instead
+of a two-column layout */
+@media (max-width: 800px) {
+	.flex-container{
+		flex-direction: column;
+	}
+	header{background-color: burlywood;}
+}
